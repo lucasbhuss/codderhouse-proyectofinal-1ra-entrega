@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudFire Hosting</title>
+
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+
+<body>
+
+<h2>CloudFire Hosting</h2>
+<p>¡La solución para tus proyectos!</p>
+
+
+<div id="plan-info">
+    <br>
+    <h4>Precios y planes:</h4>
+    <table border="1px">
+        <tr>
+            <td>Personal</td>
+            <td>Básico</td>
+            <td>Avanzado</td>
+            <td>Profesional</td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>1 GB DE RAM</li>
+                    <li>1 vCPU</li>
+                    <li>10 GB STORAGE</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>2 GB DE RAM</li>
+                    <li>2 vCPU</li>
+                    <li>20 GB STORAGE</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>6 GB DE RAM</li>
+                    <li>4 vCPU</li>
+                    <li>40 GB STORAGE</li>
+                    <li>4 TB TRANSFERENCIA</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>8 GB RAM</li>
+                    <li>8 vCPU</li>
+                    <li>100 GB STORAGE</li>
+                    <li>10 TB TRANSFERENCIA</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                $469,99
+            </td>
+            <td>
+                $895,99
+            </td>
+            <td>
+                $1.390,99
+            </td>
+            <td>
+                $1.979,99
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="btn-personal" class="btn-contratar" value="1" >Contratar</button>
+            </td>
+            <td>
+                <button id="btn-basico" class="btn-contratar" value="2" >Contratar</button>
+            </td>
+            <td>
+                <button id="btn-avanzado" class="btn-contratar" value="3">Contratar</button>
+            </td>
+            <td>
+                <button id="btn-profesional" class="btn-contratar" value="4">Contratar</button>
+            </td>
+        </tr>
+
+    </table>
+</div>
+
+
+<br>
+
+
+<div id="payment">
+    <div id="datos_plan"></div>
+    <form>
+        <ul>
+            <li>
+                <label for="tarjeta">Número de tarjeta</label>
+                <input type="number" name="numero" id="numero-tarjeta" required placeholder="4321 2312 3212 3233">
+                <label for="vencimiento">Vencimiento</label>
+                <input type="date" required>
+                <label for="tarjeta-cvv">CVV</label>
+                <input type="number" required placeholder="349">
+            </li>
+            <br>
+            <li>
+                <label for="name">Nombres</label>
+                <input type="text" id="name" placeholder="Nombre" required>
+                <label for="lastname" id="lastname">Apellidos</label>
+                <input type="text" required placeholder="Apellido">
+            </li>
+            <br>
+            <li>
+                <label for="mail">Dirección Email</label>
+                <input type="email" id="mail" required placeholder="tuemail@ejemplo.com">
+                <label for="cel">Número telefónico</label>
+                <input type="number" required placeholder="+5491167821234">
+            </li>
+            <br>
+
+            <li>
+                Agregar
+                <select id="adicional"></select>
+                <h4><div id="display-adicional"></div></h4>
+            </li>
+            <br>
+            <li>
+                <label for="cuotas">Contratar</label>
+                <select id="cuotas"></select>
+            </li>
+            <h4><div id="display-meses"></div></h4>
+            <br>
+            <br>
+            <li>
+                <button id="finalizarCompra">FINALIZAR COMPRA</button>
+                <buton><a id="cancel" href="index.html">CANCELAR</a></buton>
+            </li>
+        </ul>
+    </form>
+</div>
+
+
+<script src="/JS/main.js"></script>    
+    
+</body>
+</html>
